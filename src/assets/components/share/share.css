@@ -1,0 +1,9 @@
+#share-button {
+  display: flex;
+  align-items: center;
+}
+
+#share-button:hover::after {
+  content: 'Coming soon';
+  color: black;
+}

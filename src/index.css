@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Patrick Hand SC', cursive;
+  box-sizing: content-box;
+  color: black;
+}
+
+
+:root {
+    background-color: white;
+    --body-bg: #f1f1f2;
+    --border-main-color: black;
+    --article-bg: #fff;
+    --border-color-article: #bcbabe;
+    --nav-a-color: black;
+    --switch-theme-bg-color: rgba(128, 128, 128, 0.493);
+    --top-bar: #00b894;
+    --bottom-bar: #e17055;
+    --body-bg-night: #0f0f0f;
+    --border-color-night: white;
+    --text-color-night: white;
+    --article-bg-night: #272727;
+    --nav-a-night: #f7f7f7;
+  }
+  
+body {
+    margin: .5rem;
+    background-color: #f1f1f2;;
+    border: 6px solid var(--border-main-color);
+    border-top-left-radius: 255px 15px ;
+    border-top-right-radius: 15px 225px;
+    border-bottom-left-radius: 225px 15px;
+    border-bottom-right-radius: 15px 255px;
+  }

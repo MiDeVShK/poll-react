@@ -1,0 +1,14 @@
+button {
+  font-size: 1rem;
+  border: 2px solid rgba(255, 253, 253, 0);
+  transition: all 1.5s;
+}
+
+button:hover {
+  border: 2px solid black;
+  border-top-left-radius: 15px 255px ;
+  border-top-right-radius: 240px 25px;
+  border-bottom-left-radius: 22px 215px;
+  border-bottom-right-radius: 15px;
+  font-weight: bolder;
+}

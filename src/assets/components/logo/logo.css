@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap');
+
+#letter {
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+
+* {
+    margin: 0;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.letter {
+   width: 100%;
+   position: relative;
+   animation: shadow 4s;
+   text-shadow: -5px -1px rgba(0, 0, 0, 1);
+}
+
+@keyframes shadow {
+    0% {
+        text-shadow: -5px 6px rgba(0, 0, 0, 0);
+    }
+    80% {
+        text-shadow: -10px 7px rgba(0, 0, 0, 0);
+    }
+    100% {
+        text-shadow: -5px -1px rgba(0, 0, 0, 1);
+    }
+}
+.p {
+    position: absolute;
+    top: 2.5%;
+    left: 35%;
+    z-index: 5;
+    color: white;
+    animation-name: letterP;
+    animation-duration: 2s;
+}
+
+.o {
+    position: absolute;
+    top: 2.5%;
+    left: 52%;
+    z-index: 5;
+    color: white;
+    animation-name: letterO;
+    animation-duration: 2s;
+}
+
+.l {
+    position: absolute;
+    top: 2.5%;
+    left: 70%;
+    z-index: 6;
+    color: white;
+    animation-name: letterL;
+    
+    animation-duration: 3s;
+}
+
+.ll {
+    position: absolute;
+    top: 2.5%;
+    left: 80%;
+    z-index: 6;
+    color: white;
+    animation-name: letterLL;
+    
+    animation-duration: 3s;
+}
+
+.green, .red{
+    border-radius: 50%;
+}
+
+.green {
+    width: 70px;
+    height: 70px;
+    animation-name: exampleGreen;
+    animation-duration: 2s;
+}
+
+.red{
+    width: 60px;
+    height: 60px;
+    animation-name: exampleRed;
+    animation-duration: 2s;
+}
+
+* {
+    margin: 0;
+}
+.green {
+    position: absolute;
+    left: 40%;
+    top: 6%;
+    background-color: #A8EADE;
+    z-index: 4;
+    border: 4px solid #00B090;
+    transform: translate(-50%, -50%);
+}
+
+.red {
+    position: absolute;
+    left: 65%;
+    top: 8%;
+    z-index: 3;
+    background-color: #E75256;
+    border: 4px solid #BF3238;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes exampleGreen {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+    75% {
+        width: 125px;
+        height: 125px;
+    }
+    100% {
+        width: 70px;
+        height: 70px;
+    }
+  }
+
+  @keyframes exampleRed {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+    75% {
+        width: 100px;
+        height: 100px;
+        z-index: 3;
+    }
+    100% {
+        width: 60px;
+        height: 60px;
+    }
+  }
+
+
+  @keyframes letterP {
+    0% {
+        top: 50%;
+    }
+    75% {
+        top: 2.5%;
+        transform: rotate(20deg);
+    }
+    100% {
+        top: 2.5%;
+    }
+  }
+
+  @keyframes letterO {
+    0% {
+        top: 50%;
+    }
+    75% {
+        top: 2.5%;
+        transform: rotate(20deg);
+    }
+    100% {
+        top: 2.5%;
+    }
+  }
+
+  @keyframes letterL {
+    0% {
+        left: 36%;
+        z-index: 0;
+    }
+    75% {font-size: 0.1rem;
+        z-index: 0;
+        left: 55%;
+    }
+    100% {
+        left: 70%;
+    }
+  }
+
+  @keyframes letterLL {
+    0% {
+        left: 49%;
+        z-index: 0;
+    }
+    75% {
+        z-index: 0;
+        left: 57%;
+    }
+    100% {
+        left: 80%;
+    }
+  }

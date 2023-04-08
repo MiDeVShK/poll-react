@@ -1,0 +1,19 @@
+#create-button {
+  font-size: 1rem;
+  border: 2px solid black;
+  border-top-left-radius: 255px 15px ;
+  border-top-right-radius: 15px 225px;
+  border-bottom-left-radius: 225px 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+#create-button:hover {
+  border: 2px solid black;
+  border-top-left-radius: 15px 255px ;
+  border-top-right-radius: 240px 25px;
+  border-bottom-left-radius: 22px 215px;
+  border-bottom-right-radius: 15px;
+  font-weight: bolder;
+}
