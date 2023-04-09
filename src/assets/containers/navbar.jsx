@@ -3,6 +3,7 @@ import logo from "../img/poll-logo.png";
 import ButtonNav from "../components/buttons-nav/button-nav"
 import Switch from "../components/switchDarkMode/switchDarkMode";
 import LogoAnimate from "../components/logo/logoAnimate";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -36,10 +37,14 @@ const Navbar = () => {
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="font-medium justify-center items-center flex md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
             <li>
-              <ButtonNav text='Home'/>
+              <Link to={'/'}>
+                <ButtonNav text='Home'/>
+              </Link>
             </li>
             <li>
-              <ButtonNav text='Polls'/>
+              <Link to={'category'}>
+                <ButtonNav text='Polls'/>
+              </Link>
             </li>
             <li>
               <ButtonNav text='Sign Up'/>

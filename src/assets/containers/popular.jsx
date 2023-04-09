@@ -1,13 +1,24 @@
 import Button from '../components/buttons/button'
 import Poll from '../components/poll'
 import Title from '../components/title-category/title'
+import { useLocation } from 'react-router-dom';
 
-const Popular = () => {
+const Popular = (props) => {
+  const location = useLocation();
+
+  let content;
+  if (location.pathname === '/') {
+    content = <Title text='Most Popular'/>;
+  } else if (location.pathname === '/category') {
+    content = <Title titleText='Une category'/>;
+  }
+ 
+
     return (
       
-      <section className='mb-4'>
+      <section className='mb-4 relative z-5'>
         <template className="flex justify-between mx-10">
-            <Title text='Most Popular'/>
+            {content}
             <Button text='Create Poll' />
         </template>
 

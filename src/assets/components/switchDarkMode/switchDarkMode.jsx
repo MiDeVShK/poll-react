@@ -5,7 +5,7 @@ const Switch = () => {
   return (
         <div>
             <input className="dark-theme-switch" type="checkbox" id="switch"/>
-            <label className="label-switch" htmlFor="switch"></label>
+            <label className="label-switch" htmlFor="switch" id="theme-toggle"></label>
         </div>
     )
 }
