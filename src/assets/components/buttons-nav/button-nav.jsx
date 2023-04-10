@@ -4,7 +4,7 @@ import './buttonNav.css';
 
 function ButtonNav(props) {
   return (
-        <button className='py-2 px-4 mx-.5 uppercase'>
+        <button className='py-2 px-4 mx-.5 uppercase text-2xl'>
           {props.text}
         </button>
     )

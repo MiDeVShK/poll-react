@@ -1,44 +1,27 @@
-import Footer from "./assets/containers/footer"
-import Navbar from "./assets/containers/navbar"
-import Popular from "./assets/containers/popular"
-import Random from "./assets/containers/random"
-import ErrorPage from "./assets/components/error-page/errorpage"
-import { Routes, Route } from 'react-router-dom';
-import Category from "./assets/containers/category"
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+import ByCategory from "./pages/byCategory";
+import ErrorPage from "./pages/ErrorPage";
+
 
 
 const App = () => {
   return (
     <>
-    <Routes>
-            <Route path="/" element={
-              <>
-          <main>
-              <Popular />
-              <Random />
-          </main>
-              <Footer />
-            </>
-            } />
-          <Route path="/category" element={
-          <>
-          <main className="">
-            <Category />
-            <Popular titleText="Le nom d'une categorie"/>
-            </main>  
-          <Footer />
-          </> 
-          }/>
-          <Route path="*" element={
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/category" element={<ByCategory />} />
+        <Route
+          path="*"
+          element={
             <>
               <ErrorPage />
-              <Footer/>
             </>
-          } />
-       </Routes>
+          }
+        />
+      </Routes>
     </>
+  );
+};
 
-  )
-}
-
-export default App
+export default App;

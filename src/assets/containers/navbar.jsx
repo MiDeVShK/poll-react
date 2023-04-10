@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../img/poll-logo.png";
-import ButtonNav from "../components/buttons-nav/button-nav"
+import ButtonNav from "../components/buttons-nav/button-nav";
 import Switch from "../components/switchDarkMode/switchDarkMode";
 import LogoAnimate from "../components/logo/logoAnimate";
 import { Link } from "react-router-dom";
@@ -9,8 +9,8 @@ const Navbar = () => {
   return (
     <nav>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pr-4">
-        <a href="#" className="block relative w-36 h-36 pt-2  rounded-lg  ">
-        <LogoAnimate />
+        <a href="/" className="block relative h-auto w-60 pt-2  rounded-lg  ">
+          <img src={logo} alt="Website Logo" />
         </a>
         <button
           data-collapse-toggle="navbar-default"
@@ -37,20 +37,20 @@ const Navbar = () => {
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="font-medium justify-center items-center flex md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
             <li>
-              <Link to={'/'}>
-                <ButtonNav text='Home'/>
+              <Link to={"/"}>
+                <ButtonNav text="Home" />
               </Link>
             </li>
             <li>
-              <Link to={'category'}>
-                <ButtonNav text='Polls'/>
+              <Link to={"category"}>
+                <ButtonNav text="Polls" />
               </Link>
             </li>
             <li>
-              <ButtonNav text='Sign Up'/>
+              <ButtonNav text="Sign Up" />
             </li>
             <li>
-              <ButtonNav text='Connect'/>
+              <ButtonNav text="Connect" />
             </li>
             <li>
               <Switch />

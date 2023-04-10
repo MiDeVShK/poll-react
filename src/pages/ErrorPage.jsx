@@ -1,9 +1,13 @@
 
-import Poll from "../poll";
+import Poll from "../assets/components/poll";
+import Footer from "../assets/containers/footer";
+import Navbar from "../assets/containers/navbar";
+
 
 const ErrorPage = () => {
 return (
     <>
+    <Navbar />
         <main className="flex justify-center h-full">
             <Poll
             category='Lost'
@@ -15,6 +19,7 @@ return (
             answerBPourcent= {1}
             />
         </main>
+    <Footer />
     </>
 )};
 
