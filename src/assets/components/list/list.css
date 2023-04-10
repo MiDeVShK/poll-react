@@ -1,0 +1,12 @@
+li:nth-child(odd):hover {
+    color: #00b894;
+}
+
+li:nth-child(even):hover {
+    color: #e17055;
+}
+
+.category-name {
+    font-size: 1.5rem;
+}
+

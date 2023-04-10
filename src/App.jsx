@@ -11,17 +11,21 @@ const App = () => {
   return (
     <>
     <Routes>
-          <Route path="/" element={
-          <>
-            <Popular />
-            <Random />
-            <Footer />
-          </>
-          } />
+            <Route path="/" element={
+              <>
+          <main>
+              <Popular />
+              <Random />
+          </main>
+              <Footer />
+            </>
+            } />
           <Route path="/category" element={
           <>
-          <Category />
-          <Popular titleText="Le nom d'une categorie"/>
+          <main className="">
+            <Category />
+            <Popular titleText="Le nom d'une categorie"/>
+            </main>  
           <Footer />
           </> 
           }/>
