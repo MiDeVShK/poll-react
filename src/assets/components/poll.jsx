@@ -47,6 +47,8 @@ const Poll = (props) => {
       <FormPoll 
       answerA={props.answerA} 
       answerB={props.answerB} 
+      resultA={props.answerAPourcent}
+      resultB={props.answerBPourcent}
       resultTotal={props.resultTotal}/>
     </article>
   );
