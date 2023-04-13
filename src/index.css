@@ -38,3 +38,9 @@ body {
     border-bottom-left-radius: 225px 15px;
     border-bottom-right-radius: 15px 255px;
   }
+
+  @media screen and (max-width:1200px) {
+    body {
+      margin: .1rem;
+    }
+  }

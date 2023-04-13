@@ -10,7 +10,13 @@ const FormPoll = (props) => {
 
   let pourcentA=Math.round((props.resultA /(props.resultA + props.resultB)) * 100);
   let pourcentB=Math.round((props.resultB /(props.resultA + props.resultB)) * 100);
-
+  if (isNaN(pourcentA)) { 
+    pourcentA=0 
+  }
+  if (isNaN(pourcentB)) { 
+    pourcentB=0 
+  }
+          
   return (
     <form onSubmit={handleSubmit}>
       <div>

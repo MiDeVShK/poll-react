@@ -33,11 +33,11 @@ const Random = () => {
 
       for (let i = 1; i <= pageCount; i++) {
         buttons.push(
-          <div key={i} onClick={() => showPolls(i)}>
+          <button key={i} onClick={() => showPolls(i)}>
             <span href="#" className="px-3 py-2 leading-tight text-gray-500 ">
               {i}
             </span>
-          </div>
+          </button>
         );
       }
 

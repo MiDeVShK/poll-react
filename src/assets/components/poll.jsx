@@ -37,7 +37,7 @@ const Poll = (props) => {
     <article
       id="poll"
       className=" flex-1 p-4 border-solid border-4 border-grayPoll bg-white w-96 h-fit mx-3 max-w-lg"
-      style={{ minWidth: 40 + "%" }}
+      style={{ minWidth: 40 + "%", maxWidth: 70 + "%" }}
     >
       <div id="poll-header" className="flex justify-between">
         <p className="text-3xl">{props.category}</p>

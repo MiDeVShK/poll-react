@@ -1,9 +1,9 @@
+import React, { useState, useEffect } from 'react';
 
 import Poll from "../assets/components/poll";
 
-
-
 const ErrorPage = () => {
+
 return (
     <>
         <main className="flex justify-center h-full">
@@ -14,7 +14,7 @@ return (
             answerA='Help me'
             answerB='No I wanted to see the 404 page'
             answerAPourcent= {99}
-            answerBPourcent= {1}
+            answerBPourcent= {99} 
             />
         </main>
     </>
