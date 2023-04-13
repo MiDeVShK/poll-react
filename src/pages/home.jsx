@@ -1,17 +1,15 @@
-import Footer from "../assets/containers/footer"
-import Navbar from "../assets/containers/navbar"
+import PopUp from "../assets/containers/modal";
 import Popular from "../assets/containers/popular"
 import Random from "../assets/containers/random"
 
 const Home = () => {
     return (
-        <>
-            <Navbar />
-            <main>
-                <Popular />
-                <Random />
-            </main>
-            <Footer />
+        <>  
+        <PopUp />
+        <main className="w-3/4 flex flex-wrap justify-center m-auto">
+            <Popular />
+            <Random />
+        </main>
         </>
     )
 }

@@ -67,7 +67,7 @@ const Category = (props) => {
         whileTap={{ scale: 0.6 }}
         transition={{ duration: 0.5 }}
       />
-      <motion.div className="w-3/4">
+      <motion.div style={{width: 1200 + 'px'}}>
         <List refToPut={listRef1} id="top" />
         <List refToPut={listRef2} id="bottom" />
       </motion.div>
