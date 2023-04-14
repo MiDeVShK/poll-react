@@ -31,7 +31,7 @@ const Navbar = (props) => {
          <Hamburger />
         </button>
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="font-medium justify-center items-center flex md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
+          <ul className="font-medium justify-center items-center flex-wrap flex md:p-0 mt-4 md:justify-center md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
             <li>
               <Link to={"/"}>
                 <ButtonNav text="Home" />

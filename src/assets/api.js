@@ -1,6 +1,8 @@
+const apiUrl = "http://localhost:3000/poll"
+
 function api() {
     const getPolls = () => {
-      return fetch("http://localhost:3000/poll", {
+      return fetch(apiUrl, {
         type: "GET",
       }).then((res) => res.json());
     };
