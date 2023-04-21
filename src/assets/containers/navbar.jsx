@@ -4,14 +4,11 @@ import ButtonNav from "../components/buttons-nav/button-nav";
 import Switch from "../components/switchDarkMode/switchDarkMode";
 import { Link } from "react-router-dom";
 import Hamburger from "../components/hamburger";
-import PopUp from "./modal";
+
 
 const Navbar = (props) => {
 
-    function openModal () {
-      console.log("its Me Mario");
-      props.setIsModalOpen(true);
-  }
+
 
   
   return (
@@ -43,7 +40,7 @@ const Navbar = (props) => {
               </Link>
             </li>
             <li>
-              <ButtonNav text="Sign Up" onClick={openModal}/>
+              <ButtonNav text="Sign Up" />
             </li>
             <li>
               <ButtonNav text="Connect" />

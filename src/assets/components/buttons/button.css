@@ -1,4 +1,4 @@
-#create-button {
+.create-button {
   border: 2px solid black;
   border-top-left-radius: 255px 15px ;
   border-top-right-radius: 15px 225px;
@@ -8,7 +8,7 @@
   transition: all .5s;
 }
 
-#create-button:hover {
+.create-button:hover {
   border: 2px solid black;
   border-top-left-radius: 15px 255px ;
   border-top-right-radius: 240px 25px;

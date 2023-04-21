@@ -11,6 +11,9 @@ export default {
       grayPoll: '#bcbabe'
     },
     extend: {
+      animation: {
+        'bounce-once': 'animation: bounce 1s infinite',
+      }
       
     },
   },

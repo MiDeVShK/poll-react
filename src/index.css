@@ -29,10 +29,10 @@
     --nav-a-night: #f7f7f7;
   }
   
-body {
+body, .has-border {
     margin: .5rem;
     background-color: #f1f1f2;;
-    border: 6px solid var(--border-main-color);
+    border: 3px solid var(--border-main-color);
     border-top-left-radius: 255px 15px ;
     border-top-right-radius: 15px 225px;
     border-bottom-left-radius: 225px 15px;
@@ -44,3 +44,4 @@ body {
       margin: .1rem;
     }
   }
+
